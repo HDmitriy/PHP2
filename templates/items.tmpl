@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Items</title>
+</head>
+<body>
+  <h2>Список товаров:</h2>
+
+  {% for d in data %}
+    <div>
+        <h3>{{ d.id }}.&nbsp;{{ d.name }} </h3> 
+        <p>Цена: {{ d.price }}</p>
+    </div>
+  {% endfor %}
+  
+  <div><a href="?limit={{count + 5}}" id="show_more">Еще</a><a href="index.php">Скрыть все</a></div>
+
+ 
+
+</body>
+</html>
+  
+
+
+
+   
+ 
